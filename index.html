@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#2a170f">
+  <title>Massoma &amp; Thérèse — Invitation de mariage</title>
+  <meta name="description" content="Massoma et Thérèse vous invitent à leur mariage le 14 février 2027 à Bouaké.">
+  <meta property="og:title" content="Massoma & Thérèse — Invitation de mariage">
+  <meta property="og:description" content="Vous êtes invités à notre mariage le 14 février 2027 à Bouaké.">
+  <meta property="og:image" content="photos/accueil.jpg">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,500;0,600;1,400&family=Cinzel:wght@400;500&family=Jost:wght@300;400;500&family=Pinyon+Script&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="locked">
+
+  <!-- ===== ENVELOPPE D'OUVERTURE ===== -->
+  <div class="intro" id="intro">
+    <div class="intro-inner">
+      <p class="intro-top" data-t="introTexte"></p>
+      <div class="envelope" id="envelope">
+        <div class="env-back"></div>
+        <div class="env-card">
+          <span class="c-small" data-t="carteMention"></span>
+          <span class="c-names script"><span data-t="prenom1"></span> &amp; <span data-t="prenom2"></span></span>
+          <span class="c-date" data-t="dateCourte"></span>
+        </div>
+        <div class="env-front"></div>
+        <div class="env-flap"></div>
+        <div class="env-seal script"><span data-t="initiale1"></span>&amp;<span data-t="initiale2"></span></div>
+      </div>
+      <button class="btn-open" id="btn-open" type="button" data-t="boutonOuvrir"></button>
+    </div>
+  </div>
+
+  <main id="site">
+
+    <!-- ===== ACCUEIL ===== -->
+    <section class="hero" id="accueil">
+      <img class="hero-img" src="photos/accueil.jpg" alt="Massoma et Thérèse">
+      <div class="hero-shade"></div>
+      <div class="hero-content">
+        <p class="eyebrow light reveal" data-t="accueilIntertitre"></p>
+        <h1 class="names script">
+          <span class="reveal" style="--d:.15s" data-t="prenom1"></span>
+          <span class="amp reveal" style="--d:.35s">&amp;</span>
+          <span class="reveal" style="--d:.55s" data-t="prenom2"></span>
+        </h1>
+        <p class="hero-date reveal" style="--d:.8s" data-t="dateTexte"></p>
+        <p class="hero-phrase reveal" style="--d:1s" data-t="accueilPhrase"></p>
+        <p class="count-title reveal" style="--d:1.15s" data-t="compteTitre"></p>
+        <div class="countdown reveal" style="--d:1.3s" id="countdown">
+          <div><b id="cd-d">00</b><small></small></div>
+          <div><b id="cd-h">00</b><small></small></div>
+          <div><b id="cd-m">00</b><small></small></div>
+          <div><b id="cd-s">00</b><small></small></div>
+        </div>
+      </div>
+      <div class="scroll-hint" aria-hidden="true"></div>
+    </section>
+
+    <!-- ===== NOTRE HISTOIRE ===== -->
+    <section class="section s-cream" id="histoire">
+      <div class="wrap">
+        <header class="head">
+          <p class="eyebrow reveal" data-t="histoireIntertitre"></p>
+          <h2 class="title split-words" data-t="histoireTitre"></h2>
+          <div class="ornament reveal"></div>
+        </header>
+        <div class="timeline" id="timeline">
+          <div class="tl-track"></div>
+          <div class="tl-line" id="tl-line"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== GALERIE ===== -->
+    <section class="section s-light" id="galerie">
+      <div class="wrap">
+        <header class="head">
+          <p class="eyebrow reveal" data-t="galerieIntertitre"></p>
+          <h2 class="title split-words" data-t="galerieTitre"></h2>
+          <div class="ornament reveal"></div>
+        </header>
+        <div class="gallery" id="gallery"></div>
+      </div>
+    </section>
+
+    <!-- ===== PROGRAMME ===== -->
+    <section class="section s-brown" id="programme">
+      <div class="wrap">
+        <header class="head">
+          <p class="eyebrow light reveal" data-t="programmeIntertitre"></p>
+          <h2 class="title split-words" data-t="programmeTitre"></h2>
+          <div class="ornament reveal"></div>
+        </header>
+        <ol class="program" id="program"></ol>
+      </div>
+    </section>
+
+    <!-- ===== LE LIEU ===== -->
+    <section class="section s-cream" id="lieu">
+      <div class="wrap">
+        <header class="head">
+          <p class="eyebrow reveal" data-t="lieuIntertitre"></p>
+          <h2 class="title split-words" data-t="lieuTitre"></h2>
+          <div class="ornament reveal"></div>
+        </header>
+        <div class="place reveal">
+          <h3 class="place-name" data-t="lieuNom"></h3>
+          <p class="place-addr" data-t="lieuAdresse"></p>
+          <p class="place-city" data-t="lieuVille"></p>
+        </div>
+        <div class="map reveal">
+          <iframe id="map" title="Carte du lieu" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+        </div>
+        <p class="center reveal"><a class="btn" id="btn-route" target="_blank" rel="noopener" data-t="boutonItineraire"></a></p>
+      </div>
+    </section>
+
+    <!-- ===== TENUE ===== -->
+    <section class="section s-light" id="tenue">
+      <div class="wrap">
+        <header class="head">
+          <p class="eyebrow reveal" data-t="tenueIntertitre"></p>
+          <h2 class="title split-words" data-t="tenueTitre"></h2>
+          <div class="ornament reveal"></div>
+        </header>
+        <p class="lead reveal" data-t="tenueTexte"></p>
+        <div class="swatches" id="swatches"></div>
+      </div>
+    </section>
+
+    <!-- ===== CONFIRMER MA PRÉSENCE ===== -->
+    <section class="section s-terra" id="rsvp">
+      <div class="wrap">
+        <header class="head">
+          <p class="eyebrow light reveal" data-t="rsvpIntertitre"></p>
+          <h2 class="title split-words" data-t="rsvpTitre"></h2>
+          <div class="ornament reveal"></div>
+        </header>
+        <p class="lead reveal" data-t="rsvpTexte"></p>
+        <p class="deadline reveal"><span data-t="rsvpLibelleLimite"></span><br><strong data-t="rsvpDateLimite"></strong></p>
+        <p class="center reveal" id="rsvp-action"></p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== PIED DE PAGE ===== -->
+  <footer class="footer">
+    <div class="wrap">
+      <p class="thanks reveal" data-t="merci"></p>
+      <p class="monogram script reveal" style="--d:.2s"><span data-t="initiale1"></span> &amp; <span data-t="initiale2"></span></p>
+      <p class="hashtag reveal" style="--d:.35s" data-t="hashtag"></p>
+      <p class="foot-date reveal" style="--d:.45s" data-t="dateTexte"></p>
+    </div>
+  </footer>
+
+  <button class="music" id="music" type="button" aria-label="Couper ou relancer la musique" hidden>
+    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M4 9v6h4l5 4V5L8 9H4z"/>
+      <path class="wave" d="M16.5 8.5a5 5 0 0 1 0 7M19 6a8.5 8.5 0 0 1 0 12"/>
+      <path class="mute" d="M17 9l5 6M22 9l-5 6"/>
+    </svg>
+  </button>
+
+  <noscript><p style="position:fixed;inset:auto 0 0 0;padding:12px;background:#3b2218;color:#f6ecdc;text-align:center">Merci d'activer JavaScript pour voir l'invitation.</p></noscript>
+
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
