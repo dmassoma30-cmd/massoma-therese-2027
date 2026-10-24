@@ -65,12 +65,12 @@ const SITE = {
   galerieIntertitre: "Galerie",
   galerieTitre: "Nos plus beaux souvenirs",
   galerie: [
-    { src: "photos/galerie-1.jpg", alt: "Massoma et Thérèse en selfie" },
-    { src: "photos/galerie-2.jpg", alt: "Massoma et Thérèse côte à côte" },
-    { src: "photos/galerie-3.jpg", alt: "Massoma en tenue wax" },
-    { src: "photos/galerie-4.jpg", alt: "Massoma et Thérèse en tenues turquoise et violette" },
-    { src: "photos/galerie-5.jpg", alt: "Massoma et Thérèse devant la maison" },
-    { src: "photos/galerie-6.jpg", alt: "Massoma et Thérèse en tenues rouges" }
+    { src: "galerie-1.jpg", alt: "Massoma et Thérèse en selfie" },
+    { src: "galerie-2.jpg", alt: "Massoma et Thérèse côte à côte" },
+    { src: "galerie-3.jpg", alt: "Massoma en tenue wax" },
+    { src: "galerie-4.jpg", alt: "Massoma et Thérèse en tenues turquoise et violette" },
+    { src: "galerie-5.jpg", alt: "Massoma et Thérèse devant la maison" },
+    { src: "galerie-6.jpg", alt: "Massoma et Thérèse en tenues rouges" }
   ],
 
   /* ---------- LE PROGRAMME (horaires à modifier) ---------- */
@@ -125,5 +125,5 @@ const SITE = {
   /* ---------- MUSIQUE ----------
      Déposez votre fichier mp3 dans le dossier "musique" et
      nommez-le musique.mp3 (ou changez le nom ci-dessous).   */
-  musique: "musique/musique.mp3"
+  musique: "musique.mp3"
 };
