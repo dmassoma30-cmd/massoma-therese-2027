@@ -1,0 +1,4 @@
+Remplacez les photos par les vôtres en gardant EXACTEMENT les mêmes noms :
+  accueil.jpg   -> photo plein écran de la page d'accueil (format portrait, idéalement 1000 px de large)
+  galerie-1.jpg à galerie-6.jpg -> photos de la galerie (format portrait 3:4, 800 px de large suffisent)
+Gardez chaque photo sous 300 Ko pour que le site reste rapide sur téléphone.
